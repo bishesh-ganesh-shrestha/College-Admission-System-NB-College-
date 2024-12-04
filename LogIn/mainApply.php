@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $con->query($checkQuery);
     if ($result->num_rows > 0) {
         // Email or phone number already exists
-        echo "<script>alert('You have already booked for counselling !!');
+        echo "<script>alert('You have already booked !!');+
               window.location.href = 'main.html';
               </script>";
     } else {
